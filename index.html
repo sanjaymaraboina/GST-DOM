@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<ht lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-logo">
+        <h2>A1-Drive.in</h2>
+      </div>
+        <div class="mainMenu">
+            <a href="#home">Ho<span>M</span>e</a>
+            <a href="#service">Se<span>R</span>vi<span>C</span>es</a>
+            <a href="#about-us">Abou<span>T</span></a>
+            <a href="#contact">Co<span>N</span>tact</a>
+        </div>
+      
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+    <div class="Customer"  id="home">
+        <div class="forms">
+            <form >
+                <div class="Name">
+                  <label for="">Name</label>
+                  <input type="text" name="Your Name" placeholder="Enter Your Name" id="userName" />
+                </div>
+                <div class="Email">
+                  <label for="">Email</label>
+                  <input type="email" name="Your Name" placeholder="Enter Your Email" id="userEmail" />
+                </div>
+                <div class="Contact">
+                  <label for="">Phone number</label>
+                  <input type="tel" name="Your Name" placeholder="Enter Your Phone Number" id="userNumber"/>
+                </div>
+               
+            </form>  
+        </div>
+        <div class="photos">
+            <h2>"Let food be thy medicine and medicine be thy <span>Food</span>."</h2>
+            
+            <br>
+                <img src="./images/5.jpg" alt="">
+                <h2>Feel the food with your <span>SOUL</span></h2>
+                <br>
+                
+        </div>
+    </div>
+    <!-- menuitems  -->
+<div class="menu-card" id="menu">
+    
+    <div class="orders-items">
+        <div class="orders">
+            <div class="pic1">
+                <img src="./images/bir.jpg" alt="">
+            </div>
+            <div class="price1">
+                <h3>Biryani-350rs /-</h3>
+            </div>
+        </div>
+        <div class="orders">
+            <div class="pic1">
+                <img src="./images/manch.jpg" alt="">
+            </div>
+            <div class="price1">
+                <h3>Manchurian-300rs /-</h3>
+            </div>
+        </div>
+        <div class="orders">
+            <div class="pic1">
+                <img src="./images/win.webp" alt="">
+            </div>
+            <div class="price1">
+                <h3>Chiken wings-400rs /-</h3>
+            </div>
+        </div>
+        <div class="orders">
+            <div class="pic1">
+                <img src="./images/tan.jpg" alt="">
+            </div>
+            <div class="price1">
+                <h3>Tandoori-750rs /-</h3>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="orders-items1">
+        <div class="orders">
+            <div class="pic1">
+                <img src="./images/veg1.webp" alt="">
+            </div>
+            <div class="price1">
+                <h3>Veg-Biryani-250rs /-</h3>
+            </div>
+        </div>
+        <div class="orders">
+            <div class="pic1">
+                <img src="./images/veg2.jpg" alt="">
+            </div>
+            <div class="price1">
+                <h3>Veg Tandoori-350rs /-</h3>
+            </div>
+        </div>
+        <div class="orders">
+            <div class="pic1">
+                <img src="./images/veg3.jpg" alt="">
+            </div>
+            <div class="price1">
+                <h3>V-Manchurian-200rs /-</h3>
+            </div>
+        </div>
+        <div class="orders">
+            <div class="pic1">
+                <img src="./images/veg4.webp" alt="">
+            </div>
+            <div class="price1">
+                <h3>Veg Meals-400rs /-</h3>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- orderyour-food -->
+    
+<div class="order">
+    <div class="item">
+        <h4>Biryani:</h4>
+     <input type="text" id="biryani">
+    </div>
+    <div class="item"><h4>Mnchurian: </h4>
+    <input type="text" id="manchurian">
+    </div>
+    <div class="item"><h4>Chiken wings:</h4> 
+        <input type="text" id="chickenWings">
+    </div>
+    <div class="item"><h4>Tandoori:</h4> 
+        <input type="text" id="tandoori">
+    </div>
+    <div class="item"><h4>Veg Biryani:</h4>
+         <input type="text" id="veg">
+    </div>
+    <div class="item"><h4>Veg Tandoori:</h4>
+     <input type="text" id="vegTandoori">
+    </div>
+    <div class="item"><h4>V-Manchurian:</h4>
+         <input type="text" id="vegmanch">
+    </div>
+    <div class="item"><h4>Veg Meals:</h4> 
+        <input type="text" id="vegMeals">
+    </div>
+    <div class="item"><h4>GST:</h4> 
+        <input type="text" id="gst">
+    </div>
+    <div class="button">
+        <button id="payment" onclick="calculate()">Payment</button>
+    </div>
+    <p id="bill"></p>
+    <p id="para"></p>
+</div>
+<div class="Services"   id="service">
+    <h1>Services</h1>
+    <div class="serve">
+        <div class="cater">
+            <img src="./images/cat1.jpg" alt="">
+            <h2>Catering</h2>
+            <p>We do Catering on Oders</p>
+        </div>
+        <div class="banq">
+            <img src="./images/ban.jpg" alt="">
+            <h2>Banquet Hall</h2>
+            <p>We have 80 seating hall</p>
+        </div>
+        <div class="online">
+            <img src="./images/swi.jpg" alt="">
+            <h2>Online Orders</h2>
+            <p>Partners Swiggy / Zomato</p>
+            
+        </div>
+    </div>
+</div>
+<div class="about" id="about-us">
+    <h3><span>A</span>bout <span>U</span>s</h3>
+   <div class="food">
+   <div class="food1">
+    <div class="ind">
+        <img src="./images/download.jpeg" alt="">
+    <h4>Indian Food</h4>
+    </div>
+
+    <div class="cont">
+        <img src="./images/download 2.jpeg" alt="">
+    <h4>Continental Food</h4>
+    </div>
+   </div>
+   <div class="food2">
+    <div class="jap">
+        <img src="./images/download 3.jpeg" alt="">
+    <h4>Japanees Food</h4>
+    </div>
+    <div class="ital">
+        <img src="./images/download1.jpeg" alt="">
+    <h4>Italian Food</h4>
+    </div>
+   </div>
+   </div>
+</div>
+<div class="about-us">
+    <h2>Welcome to <span>A</span>1-Drive.in</h2>
+    <div class="content">
+        <h5>about us</h5>
+    <p>Welcome to <span>A</span>1-Drive.in - where passion meets plate. Since [Year], we've crafted culinary experiences that redefine delicious. Join us for warm hospitality, local flavors, and unforgettable moments.</p>
+    </div>
+    <div class="content">
+        <h5>Crafting Excellence</h5>
+    <p>At <span>A</span>1-Drive.in - our chefs blend local flavors with culinary expertise to bring you dishes that redefine delicious. Each bite tells a story of quality, creativity, and a commitment to the art of cooking.</p>
+    </div>
+
+    <div class="content">
+        <h5>Warm Welcome:
+        </h5>
+<p>Step into our inviting space, where warm hospitality and a relaxed atmosphere converge. From casual brunches to special celebrations, our attentive staff is here to make every moment special</p>
+    </div>
+</div>
+<!-- contact -->
+
+<div class="contact"   id="contact">
+    
+<h1><span>C</span>ontact <span>U</span>s</h1>
+
+<form action="process_form.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+    <input type="submit" value="Submit" id="submit">
+</form>
+</div>
+
+<!-- footer -->
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h2>Connect with Us</h2>
+                <!-- Add your social media icons/links here -->
+
+                <a href="#" target="_blank"><img src="./images/insta.avif" alt="Twitter"></a>
+                <a href="#" target="_blank"><img src="./images/twite.avif" alt="instagram"></a>
+                <a href="#" target="_blank"><img src="./images/face.avif" alt="instagram"></a>
+
+                <!-- Add more social media links as needed -->
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 <span>A</A></span>1-Drive.in. All rights reserved. | Designed by Your Name</p>
+        </div>
+    </footer>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
